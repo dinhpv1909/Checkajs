@@ -8,9 +8,8 @@ const api = 'https://669a7abd9ba098ed61ffccb3.mockapi.io/api/v1/lol/champion/'
 export class AppService {
   constructor(private http: HttpClient) { }
 
-  peoples(limit: number = 4): any{
+  peoples(): any{
     return this.http.get<any>(api)
   }
-
 
 }
